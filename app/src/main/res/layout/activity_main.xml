@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/top_layout"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Second_input"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="85dp"
+        android:rotationX="-5"
+        android:text="Calculator"
+        android:textColor="@color/bg_color"
+        android:textSize="50dp" />
+
+    <EditText
+        android:id="@+id/First_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="200dp"
+        android:background="@color/black"
+        android:gravity="center_horizontal"
+        android:hint="First value"
+        android:paddingVertical="15dp"
+        android:rotationX="-2"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/Second_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/First_input"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/black"
+        android:gravity="center_horizontal"
+        android:hint="Second value"
+        android:paddingVertical="15dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/Second_input"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:text="+"
+        app:backgroundTint="#009688" />
+
+    <Button
+        android:id="@+id/sub_btn"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/Second_input"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/add_btn"
+        android:text="-"
+        app:backgroundTint="#4CAF50" />
+
+    <Button
+        android:id="@+id/multiply_btn"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/Second_input"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/sub_btn"
+        android:text="*"
+        app:backgroundTint="#FF9800" />
+
+    <Button
+        android:id="@+id/divide_btn"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/Second_input"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/multiply_btn"
+        android:text="/"
+        app:backgroundTint="#FF5722" />
+
+    <TextView
+        android:id="@+id/result_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divide_btn"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:text="Result Here"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result_id"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="150dp"
+
+        android:text="BySaqibHussain"
+        android:textColor="@color/bg_color"
+        android:textSize="25dp" />
+
+
+
+
+
+
+</RelativeLayout>
